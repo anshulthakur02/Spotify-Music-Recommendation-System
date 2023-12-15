@@ -86,7 +86,7 @@ A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a trac
 
 ## Data Preprocessing
 
-<span style = "font-size:30px;">1. Data Cleaning </span>
+<span style = "font-size:60px;">1. Data Cleaning </span>
 
 Removing unnecessary columns:
 
