@@ -115,7 +115,7 @@ If we want to use K-means, the distribution should be symmetric. As we can obser
 
 As many of our variables have left skewness a method like logarithm cannot help. Box-Cox is not useful either because its inputs are just positive numbers. I used Yeo-Johnson at last.The result is as follows:  (point: The variable ‘mode’ is categorical. So I didn’t use the method for that.)
 
-![](Images/Histogram2.png)
+![](Images/Histogram_2.png)
 
 
 3. 
