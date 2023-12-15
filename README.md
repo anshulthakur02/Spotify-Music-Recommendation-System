@@ -106,6 +106,9 @@ them as well.
 After all these data cleanings we have 36199 rows and 14 columns, all the columns are numerical but ‘id’ which is string. I keep this column because when I want to recommend a song to a user, I’m going to use it, But when clustering I temporarily drop it, so that it doesn’t have an effect on the result.
 
 2. Data Transformation
+
+Now Let’s take a look at histogram plots of our data:
+
 3. 
 Now Let’s take a look at histogram plots of our data:
 
