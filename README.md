@@ -111,15 +111,33 @@ Now Let’s take a look at histogram plots of our data:
 
 ![](Images/Histogram.png)
 
-If we want to use K-means, the distribution should be symmetric. As we can observe from the plot above, most of the features have a skewed distribution. So we should normalize them.
+If we want to use K-means, the distribution should be symmetric. As we can observe from the plot above, most of the features have a skewed distribution. So we should standardize them.
 
 As many of our variables have left skewness a method like logarithm cannot help. Box-Cox is not useful either because its inputs are just positive numbers. I used Yeo-Johnson at last.The result is as follows:  (point: The variable ‘mode’ is categorical. So I didn’t use the method for that.)
 
 ![](Images/Histogram_2.png)
 
+After Normlaizing the result is as follows:
 
-3. 
+![](Images/Histogram_3.png)
+
+
+3. Data Reduction
+
+Before moving on to clustering let’s just make sure about another thing: For a better result, we should find highly correlated variables, and if there are any, we should drop them.
+
+![](Images/Corr_Heatmap.png)
+
+None of the correlations are not very noticable. So we keep all of them. Now our data is ready to be clustered.
+
+## Clustering:
+
+I aam going to use K-means algorithm which is an unsupervised one. An important point about K-means, is that before running, it should be told about the value of k, which is the number of clusters that we want to have. I will use the elbow method to find the optimum number of clusters.
+
+![](Images/elbow_method.png)
+
+It can be concluded thaat **10 clusters** can work well. After clustering now I can handle the input/output part of the project.
 
 
 
-4. 
+5. 
