@@ -6,11 +6,11 @@ In this project I performed clustering on the Spotify dataset and developed a re
 At first the given data contains 42305 rows and 22 columns, where
 the columns are as follow:
 
-#### **acousticness**: number<float>
+<span style="font-size:16px;"> **acousticness**: number<float> </span>
 
 A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
 
-#### **analysis_url**: string
+<span style="font-size:16px;"> **analysis_url**: string </span>
 
 #### **danceability**: number<float>
 
