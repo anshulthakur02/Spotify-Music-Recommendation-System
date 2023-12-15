@@ -84,3 +84,24 @@ A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a trac
 
 <span style="font-size:18px;"> **genre**: string </span>
 
+## Data Preprocessing
+
+1. Data Cleaning
+
+Removing unnecessary columns:
+
+columns 'type', 'uri', 'track_href', 'analysis_url' and 'genre' are not going to be useful for us, even genre will not appear in our input so it doesn’t help that much. I’m going to drop all mentioned columns.
+
+Handling missing data:
+
+In columns 'song_name', 'Unnamed: 0' and 'title' we see lots of NaNs, in addition to that they are not going to be helpful for the clustering part, so I, going to drop these columns too.
+
+It was previously mentioned that if the ‘key’ is not detected, its value is -1, it might be a good way of handling the missing data, but it can ruin our upcoming clustering. So I’m going to drop all the rows whose ‘key’ is -1.
+
+Removing Duplicates:
+
+It seems that we have a lot of repeated rows too. I’m going to drop
+them as well.
+
+After all these data cleanings we have 36199 rows and 14 columns, all the columns are numerical but ‘id’ which is string. I keep this column because when I want to recommend a song to a user, I’m going to use it, But when clustering I temporarily drop it, so that it doesn’t have an effect on the result.
+
