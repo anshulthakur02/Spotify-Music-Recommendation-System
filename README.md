@@ -86,7 +86,7 @@ A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a trac
 
 ## Data Preprocessing
 
-1. Data Cleaning
+<span style = "font-size:30px;">1. Data Cleaning </span>
 
 Removing unnecessary columns:
 
@@ -104,4 +104,5 @@ It seems that we have a lot of repeated rows too. I’m going to drop
 them as well.
 
 After all these data cleanings we have 36199 rows and 14 columns, all the columns are numerical but ‘id’ which is string. I keep this column because when I want to recommend a song to a user, I’m going to use it, But when clustering I temporarily drop it, so that it doesn’t have an effect on the result.
+
 
