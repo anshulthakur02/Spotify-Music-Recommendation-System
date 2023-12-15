@@ -137,6 +137,3 @@ I am going to use K-means algorithm which is an unsupervised one. An important p
 ![](Images/elbow_method.png)
 
 It can be concluded thaat **10 clusters** can work well. After clustering now I can handle the input/output part of the project.
-
-
-
