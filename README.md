@@ -117,7 +117,7 @@ As many of our variables have left skewness a method like logarithm cannot help.
 
 ![](Images/Histogram_2.png)
 
-After Normlaizing the result is as follows:
+After Normalizing the result is as follows:
 
 ![](Images/Histogram_3.png)
 
@@ -132,7 +132,7 @@ None of the correlations are not very noticable. So we keep all of them. Now our
 
 ## Clustering:
 
-I aam going to use K-means algorithm which is an unsupervised one. An important point about K-means, is that before running, it should be told about the value of k, which is the number of clusters that we want to have. I will use the elbow method to find the optimum number of clusters.
+I am going to use K-means algorithm which is an unsupervised one. An important point about K-means, is that before running, it should be told about the value of k, which is the number of clusters that we want to have. I will use the elbow method to find the optimum number of clusters.
 
 ![](Images/elbow_method.png)
 
@@ -140,4 +140,3 @@ It can be concluded thaat **10 clusters** can work well. After clustering now I 
 
 
 
-5. 
