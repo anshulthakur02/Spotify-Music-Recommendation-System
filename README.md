@@ -109,8 +109,17 @@ After all these data cleanings we have 36199 rows and 14 columns, all the column
 
 Now Let’s take a look at histogram plots of our data:
 
+![Alt Text](images/Histogram.png)
+
+If we want to use K-means, the distribution should be symmetric. As we can observe from the plot above, most of the features have a skewed distribution. So we should normalize them.
+
+As many of our variables have left skewness a method like logarithm cannot help. Box-Cox is not useful either because its inputs are just positive numbers. I used Yeo-Johnson at last.The result is as follows:  (point: The variable ‘mode’ is categorical. So I didn’t use the method for that.)
+
+![Alt Text](images/Histogram2.png)
+
+
 3. 
-Now Let’s take a look at histogram plots of our data:
+
 
 
 4. 
